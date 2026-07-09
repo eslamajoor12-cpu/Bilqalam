@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>معهد بلقلم — منصة استخبارات الكادر التعليمي</title>
+<link rel="icon" type="image/png" href="assets/icons/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <div class="brand">
+      <div class="brand-mark"><img src="assets/logo/bilqalam-logo.png" alt="شعار معهد بلقلم"></div>
+      <div class="brand-text">
+        <h1>معهد بلقلم</h1>
+        <span>Bilqalam Institute™ · منصة الكادر التعليمي</span>
+      </div>
+    </div>
+    <div class="navlinks">
+      <a href="#tracks">المسارات</a>
+      <a href="#directory">الدليل</a>
+      <a href="#languages">اللغات</a>
+      <a href="#dialects">اللهجات</a>
+      <a href="#matrix">المصفوفة</a>
+      <a href="#insights">الرؤى الإدارية</a>
+    </div>
+  </div>
+</nav>
+
+<header class="shell hero">
+  <svg class="hero-watermark" viewBox="0 0 100 100" fill="none">
+    <path d="M20 85 L20 20 L45 20 Q60 20 60 35 Q60 50 45 50 L28 50" stroke="#FBBC5B" stroke-width="3" fill="none"/>
+    <path d="M45 50 Q62 50 62 67 Q62 85 45 85 L20 85" stroke="#FBBC5B" stroke-width="3" fill="none"/>
+  </svg>
+  <div class="eyebrow"><span class="dot"></span> لقطة حية للقدرات</div>
+  <h2>كل معلم، كل مسار، <em>في رؤية واحدة واضحة.</em></h2>
+  <p>منصة معهد بلقلم الداخلية لجاهزية الكادر التعليمي عبر المسارات التخصصية — لمساعدتك على التوظيف بسرعة أكبر، وسد الفجوات، ومعرفة من هو المؤهل لكل مهمة بدقة.</p>
+  <svg class="pen-rule" viewBox="0 0 150 10" fill="none">
+    <path d="M2 6 Q30 -2 55 6 T110 6 T148 4" stroke="#FBBC5B" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </svg>
+
+  <div class="kpi-grid" id="kpiRow"></div>
+</header>
+
+<main class="shell">
+
+  <section class="divider"></section>
+  <section class="section" id="tracks">
+    <div class="section-head">
+      <div>
+        <span class="label">الجاهزية حسب المسار</span>
+        <h3>المسارات التعليمية</h3>
+        <p>يتم تصنيف كل معلم تلقائيًا حسب مستوى التأهيل في كل مسار.</p>
+      </div>
+      <div class="section-meta" id="tracksMeta"></div>
+    </div>
+    <div class="legend" id="statusLegend"></div>
+    <div class="tracks-grid" id="tracksGrid"></div>
+  </section>
+
+  <section class="divider"></section>
+  <section class="section" id="directory">
+    <div class="section-head">
+      <div>
+        <span class="label">السجل الكامل</span>
+        <h3>دليل المعلمين</h3>
+        <p>اللغة، اللهجات، ومؤهلات المسارات في نظرة واحدة.</p>
+      </div>
+      <div class="section-meta" id="directoryMeta"></div>
+    </div>
+    <div class="directory-grid" id="directoryGrid"></div>
+  </section>
+
+  <section class="divider"></section>
+  <section class="section" id="languages">
+    <div class="section-head">
+      <div>
+        <span class="label">إتقان اللغات الأجنبية</span>
+        <h3>تغطية اللغات</h3>
+        <p>من يتحدث ماذا، بخلاف العربية.</p>
+      </div>
+    </div>
+    <div class="coverage-grid" id="languageGrid"></div>
+  </section>
+
+  <section class="divider"></section>
+  <section class="section" id="dialects">
+    <div class="section-head">
+      <div>
+        <span class="label">التغطية الإقليمية</span>
+        <h3>تغطية اللهجات العربية</h3>
+        <p>تصنيف المعلمين حسب اللهجة، مع احتساب التداخلات.</p>
+      </div>
+    </div>
+    <div class="coverage-grid dialects" id="dialectGrid"></div>
+  </section>
+
+  <section class="divider"></section>
+  <section class="section" id="matrix">
+    <div class="section-head">
+      <div>
+        <span class="label">نظرة شاملة</span>
+        <h3>مصفوفة القدرات</h3>
+        <p>كل معلم مقابل كل مسار — اللون يحكي القصة كاملة.</p>
+      </div>
+    </div>
+    <div class="legend" id="matrixLegend"></div>
+    <div class="glass matrix-wrap">
+      <table class="matrix" id="matrixTable"></table>
+    </div>
+  </section>
+
+  <section class="divider"></section>
+  <section class="section" id="insights">
+    <div class="section-head">
+      <div>
+        <span class="label">تحليل تلقائي</span>
+        <h3>رؤى إدارية</h3>
+        <p>أنماط وفجوات ومؤشرات توظيف مستخلصة مباشرة من البيانات.</p>
+      </div>
+    </div>
+    <div class="insights-grid" id="insightsGrid"></div>
+  </section>
+
+  <div class="footer">
+    <span class="brand-line">معهد بلقلم</span>
+    <span id="footerMeta">منصة استخبارات الكادر التعليمي — مُولَّدة من بيانات التوظيف الحالية</span>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
